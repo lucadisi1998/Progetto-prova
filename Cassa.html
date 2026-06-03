@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="Carrello.css">
+
+  <style>
+    @font-face {
+      font-family: "FontPersonale";
+      src: url(font/FontPersonale.ttf) format('woff');
+    }
+
+    body {
+
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .logo {
+
+      display: flex;
+      background-color: white;
+      justify-content: center;
+      border-bottom: solid 1px grey;
+      margin-top: 5px;
+    }
+
+    .logo a {
+
+      width: 20%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo img {
+
+      max-height: 90px;
+      mix-blend-mode: difference;
+      padding: 10px;
+    }
+
+    .sezioni {
+
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
+
+    .login {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .titolo h2 {
+
+      font-family: arial;
+      font-size: 30px;
+      color: #000000;
+    }
+
+    .formprofilo {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .datiaccount {
+
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .datiDoppiacasella {
+
+      width: 49%;
+    }
+
+    .datiDoppiacasella2 {
+
+      width: 49%;
+    }
+
+    .datiaccount input {
+
+      width: 100%;
+      height: 50px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      outline-color: blue;
+      border: solid 1px grey;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: capitalize;
+      padding: 10px;
+    }
+
+    .bottonelogin {
+
+      display: flex;
+      width: 40%;
+    }
+
+    .bottonelogin input {
+
+      height: 50px;
+      width: 100%;
+      background-color: #000000;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .testologin {
+
+      display: flex;
+    }
+
+    .testologin p {
+
+      font-family: arial;
+      font-size: 20px;
+      color: #000000;
+    }
+
+    .testologin a {
+
+      color: #161616;
+      text-decoration: none;
+      font-family: arial;
+      position: relative;
+      display: inline-block;
+    }
+
+    .testologin a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background-color: #000;
+      transition: width 0.3s ease;
+
+    }
+
+    .testologin a:hover {
+
+      color: blue;
+    }
+
+    .testologin a:hover::after {
+      width: 100%;
+    }
+
+    .spedizione {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .formdatispedizione {
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dati {
+
+      margin-top: 10px;
+    }
+
+    .dati input {
+
+      width: 100%;
+      height: 50px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      outline-color: blue;
+      border: solid 1px grey;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: capitalize;
+      padding: 10px;
+    }
+
+    .dati2 {
+
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .dati2 input {
+
+      width: 100%;
+      height: 50px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      outline-color: blue;
+      border: solid 1px grey;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: capitalize;
+      padding: 10px;
+
+    }
+
+    .formpagamento {
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .pagamento input {
+
+      height: 50px;
+      width: 60%;
+      background-color: #000000;
+      color: white;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 10px;
+      cursor: pointer;
+
+    }
+
+    .menucarrello2 {
+
+      width: 40%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      border: solid 1px #000000;
+      border-radius: 20px;
+      padding: 30px;
+      position: sticky;
+      top: 30px;
+    }
+
+
+    @media (max-width:900px) {
+
+
+      .logo img {
+
+        max-height: 60px;
+      }
+
+      .sezioni {
+
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .login {
+
+        width: 90%;
+      }
+
+      .datiaccount {
+
+        flex-direction: column;
+
+      }
+
+      .datiDoppiacasella {
+
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .bottonelogin {
+
+        width: 100%;
+      }
+
+      .spedizione {
+
+        width: 90%;
+      }
+
+      .carta {
+
+        width: 90%;
+      }
+
+      .pagamento {
+
+        width: 90%;
+      }
+
+      .pagamento input {
+
+        width: 100%;
+      }
+
+      .menucarrello2 {
+
+        width: 90%;
+        height: 55vh;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding: 10px;
+
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="logo">
+    <a href="index.html"><img src="img/LogoScritta3.jpg"></a>
+  </div>
+
+  <div class="sezioni">
+    <div class="box1">
+
+      <div class="login">
+        <div class="titolo">
+          <h2>Accedi al Tuo Profilo</h2>
+        </div>
+
+        <form action="" method="post" class="formprofilo">
+
+          <div class="datiaccount">
+            <div class="datiDoppiacasella">
+              <label for="emailLogin"></label>
+              <input type="email" id="emailLogin" placeholder="Email">
+            </div>
+
+            <div class="datiDoppiacasella">
+              <label for="passwordLogin"></label>
+              <input type="password" id="passwordLogin" placeholder="Password">
+            </div>
+
+          </div>
+
+          <div class="bottonelogin">
+            <input type="submit" value="Accedi">
+          </div>
+        </form>
+
+        <div class="testologin">
+          <p>Se non hai un profilo <a href="RegistrazioneProfilo.html">Registrati Ora</a></p>
+        </div>
+
+      </div>
+
+      <div class="spedizione">
+
+        <div class="titolo">
+          <h2>Dati Spedizione</h2>
+        </div>
+
+        <form action="" method="post" class="formdatispedizione">
+
+          <div class="dati">
+            <label for="nome"></label>
+            <input type="text" id="nome" placeholder="Nome">
+          </div>
+
+          <div class="dati">
+            <label for="cognome"></label>
+            <input type="text" id="cognome" placeholder="Cognome">
+          </div>
+
+          <div class="dati">
+            <label for="emailDati"></label>
+            <input type="email" id="emailDati" placeholder="Email">
+          </div>
+
+          <div class="dati">
+            <label for="telefono"></label>
+            <input type="tel" id="telefono" placeholder="Numero Telefonico">
+          </div>
+
+
+
+          <div class="dati">
+            <label for="paese"></label>
+            <input type="text" id="paese" placeholder="Paese">
+          </div>
+
+          <div class="dati2">
+
+            <div class="datiDoppiacasella2">
+              <label for="citta"></label>
+              <input type="text" id="citta" placeholder="Città">
+            </div>
+
+
+            <div class="datiDoppiacasella2">
+              <label for="cap"></label>
+              <input type="text" id="cap" placeholder="CAP">
+            </div>
+          </div>
+
+
+          <div class="dati">
+            <label for="indirizzo"></label>
+            <input type="text" id="indirizzo" placeholder="Indirizzo">
+
+          </div>
+
+        </form>
+      </div>
+
+      <div class="carta">
+
+        <div class="titolo">
+          <h2>Pagamento</h2>
+        </div>
+      </div>
+
+      <div class="pagamento">
+
+        <form action="" method="post" class="formpagamento">
+          <input type="submit" value="Paga ora">
+        </form>
+      </div>
+
+    </div>
+
+    <div class="menucarrello2">
+
+      <div class="boxprodotti">
+
+
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <script src="Carrelo.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      renderCarrello();
+
+    });
+  </script>
+
+
+</body>
+
+</html>

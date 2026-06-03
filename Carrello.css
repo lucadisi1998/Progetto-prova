@@ -1,0 +1,361 @@
+.boxprodotti {
+
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  overflow-y: auto;
+  padding: 20px;
+  border-bottom: solid 1px grey;
+}
+
+
+.boxprodotti::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+.boxprodotti::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.boxprodotti::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(61, 61, 61);
+}
+
+
+
+.prodotti {
+
+  display: flex;
+  margin-bottom: 40px;
+
+}
+
+.prodotti2 {
+
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.prodottifoto {
+
+  width: 30%;
+  display: flex;
+  box-shadow: 0px 0px 9px grey;
+  border-radius: 10px;
+  height: 130px;
+}
+
+.prodottifoto a {
+
+  display: flex;
+}
+
+.prodottifoto img {
+
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.prodottiinfo {
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+
+.prodottititolo h3 {
+
+  font-family: arial;
+  font-size: 22px;
+  color: #000000;
+  margin: 0;
+}
+
+
+.prodotticolore {
+
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.prodotticolore h3 {
+
+  font-family: arial;
+  color: #6e6d6d;
+  font-size: 17px;
+  margin: 0;
+}
+
+.prodotticolore p {
+
+  font-family: arial;
+  color: #6e6d6d;
+  font-size: 17px;
+  margin: 0;
+}
+
+
+.prodottitaglia {
+
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.prodottitaglia h3 {
+
+  font-family: arial;
+  color: #6e6d6d;
+  font-size: 17px;
+  margin: 0;
+}
+
+.prodottitaglia p {
+
+  font-family: arial;
+  color: #6e6d6d;
+  font-size: 17px;
+  margin: 0;
+}
+
+
+.quantita {
+
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px grey;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.quantita button {
+
+  all: unset;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-qty {
+  width: 16px;
+  height: 16px;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.meno.disabled {
+  pointer-events: none;
+}
+
+.meno.disabled .icon-qty {
+  stroke: #bbb;
+}
+
+.quantita input[type="number"] {
+  width: 20%;
+  text-align: center;
+  border: none;
+  font-size: 17px;
+}
+
+.quantita input[type="number"]::-webkit-inner-spin-button,
+.quantita input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantita input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+
+
+
+.prodottiprezzo {
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.prodottiprezzo p {
+
+  font-family: "FontPersonale";
+  font-size: 20px;
+  color: #1d1d1d;
+  margin-top: 0;
+}
+
+.prodottiprezzo button {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.icon-remove {
+  width: 30px;
+  height: 30px;
+  stroke: grey;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+
+.totale {
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.totale p {
+
+  font-family: "FontPersonale";
+  font-size: 25px;
+  color: #000000;
+}
+
+.carrellovuoto {
+
+  display: flex;
+  justify-content: center;
+}
+
+.carrellovuoto p {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width:900px) {
+
+  .boxprodotti {
+
+    height: 45vh;
+    padding-right: 0;
+  }
+
+  .prodotti {
+
+    
+    margin-bottom: 30px;
+  }
+
+
+  .prodottifoto {
+
+    width: 40%;
+    height: 100px;
+
+  }
+
+
+
+  .prodottititolo h3 {
+
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .prodotticolore {
+
+    width: 70%;
+  }
+
+  .prodotticolore h3 {
+
+    font-size: 15px;
+  }
+
+  .prodotticolore p {
+
+    font-size: 15px;
+  }
+
+   .prodottitaglia {
+
+    width: 70%;
+  }
+
+  .prodottitaglia h3 {
+
+    font-size: 15px;
+  }
+
+  .prodottitaglia p {
+
+    font-size: 15px;
+  }
+
+
+
+
+  .quantita {
+
+    width: 60%;
+    padding: 0;
+
+
+
+  }
+
+  .quantita input[type="number"] {
+
+    font-size: 15px;
+  }
+
+  .prodottiprezzo {
+
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  .prodottiprezzo p {
+
+    font-size: 15px;
+
+  }
+
+  .totale {
+
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+  }
+
+  .totale p {
+
+    font-size: 20px;
+  }
+
+}

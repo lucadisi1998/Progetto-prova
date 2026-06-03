@@ -1,0 +1,315 @@
+.sezioni {
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.filtrimobile {
+
+  display: none;
+}
+
+.filtri {
+
+
+  display: flex;
+  width: 18%;
+  flex-direction: column;
+  height: 90vh;
+  position: sticky;
+  top: 80px;
+
+
+}
+
+.bottonefiltri {
+
+  display: none;
+}
+
+
+.titolofiltri p {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: rgb(36, 35, 35);
+  cursor: pointer;
+}
+
+.filtri2 {
+
+  padding-left: 8%;
+  border-bottom: solid 1px grey;
+}
+
+
+.filtri2 ul {
+
+  list-style: none;
+  padding: 0%;
+}
+
+
+.filtri2 input[type="checkbox"] {
+
+
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(0, 0, 0);
+}
+
+.filtri2 input[type="range"] {
+
+  accent-color: rgb(0, 0, 0);
+}
+
+
+.filtri2 label {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #4b4848;
+  padding-left: 20px;
+}
+
+.filtriscomparsa {
+
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+}
+
+.boxacquisti {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  width: 80%;
+}
+
+.boxacquisti2 {
+
+
+  width: 30%;
+  margin-bottom: 5%;
+
+}
+
+.boxacquistifoto {
+
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px grey;
+  height: 50vh;
+  display: flex;
+
+
+}
+
+.boxacquistifoto a {
+
+  width: 100%;
+  display: flex;
+
+}
+
+
+
+.boxacquistifoto img {
+
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.boxacquistifoto:hover img {
+
+  transform: scale(1.1);
+}
+
+.boxacquistitesto {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.boxacquistitesto a {
+
+  text-decoration: none;
+}
+
+
+.boxacquistitesto h2 {
+
+  font-family: "FontPersonale";
+  color: rgb(21, 21, 21);
+  margin-bottom: 0%;
+}
+
+
+
+.boxacquistitesto p {
+
+  font-size: 20px;
+  font-family: "FontPersonale";
+  color: #6b6b6b;
+
+
+
+}
+
+.boxacquisticolori img {
+
+  width: 50px;
+  height: 50px;
+  border: solid 1px;
+  border-radius: 5px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+@media (max-width:900px) {
+
+  .sezioni {
+
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .filtrimobile {
+
+    display: flex;
+    margin-left: 5%;
+  }
+
+  .filtrimobile p {
+
+    font-family: "FontPersonale";
+    font-size: 25px;
+    font-family: "FontPersonale";
+    font-size: 20px;
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px grey;
+    border-radius: 10px;
+
+
+  }
+
+  .filtrimobile p:active {
+
+    background-color: #0d4883;
+    color: white;
+    transition: 0.0s ease;
+  }
+
+  .filtri {
+
+
+
+    position: absolute;
+    top: 0%;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+  }
+
+  .filtri.attivo {
+
+    transform: translateX(0);
+  }
+
+  .bottonefiltri {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    padding-bottom: 0;
+  }
+
+  .chiusurafiltri {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+
+  .chiusurafiltri::before,
+  .chiusurafiltri::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #222;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  .chiusurafiltri::before {
+    transform: rotate(45deg);
+  }
+
+  .chiusurafiltri::after {
+    transform: rotate(-45deg);
+  }
+
+  /* Hover elegante */
+  .chiusurafiltri:hover::before,
+  .chiusurafiltri:hover::after {
+    background-color: #888;
+  }
+
+
+
+
+
+
+  .boxacquisti {
+
+    width: 95%;
+  }
+
+  .boxacquisti2 {
+
+    width: 45%;
+    margin-bottom: 10%;
+  }
+
+  .boxacquistifoto {
+
+    height: 30vh;
+  }
+
+  .boxacquistifoto:hover img {
+
+    transform: none;
+  }
+
+  .boxacquistitesto h2 {
+
+    font-size: 20px;
+  }
+
+  .boxacquistitesto p {
+
+    font-size: 18px;
+  }
+
+  .boxacquisticolori img {
+
+    width: 35px;
+    height: 35px;
+
+
+  }
+
+
+}

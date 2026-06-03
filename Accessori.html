@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="Header-Footer.css">
+  <link rel="stylesheet" href="Prodotti.css">
+
+  <style>
+    @font-face {
+      font-family: "scritta";
+      src: url(font/scritta.ttf) format('woff');
+    }
+
+    @font-face {
+      font-family: "FontPersonale";
+      src: url(font/FontPersonale.ttf) format('woff');
+    }
+
+    body {
+      margin: 0%;
+      padding: 0%;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div id="Header"></div>
+
+
+
+
+  <div class="filtrimobile">
+    <p>Filtro</p>
+  </div>
+
+  <div class="sezioni">
+    <div class="filtri">
+
+      <div class="bottonefiltri">
+        <span class="chiusurafiltri"></span>
+      </div>
+
+      <div class="filtri2">
+        <div class="titolofiltri">
+          <p>Marca</p>
+        </div>
+
+        <div class="filtriscomparsa">
+          <ul>
+            <li><input type="checkbox" id="label1"><label for="label1">Jackfin</label></li>
+            <li><input type="checkbox" id="label2"><label for="label2">Molix</label></li>
+            <li><input type="checkbox" id="label3"><label for="label3">Duo</label></li>
+            <li><input type="checkbox" id="label4"><label for="label4">Seaspin</label></li>
+            <li><input type="checkbox" id="label5"><label for="label5">Rapala</label></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="filtri2">
+        <div class="titolofiltri">
+          <p>Fascia di Prezzo</p>
+        </div>
+
+        <div class="filtriscomparsa">
+          <input type="range" min="5" max="130">
+        </div>
+      </div>
+    </div>
+
+    <div class="boxacquisti">
+
+      <div class="boxacquisti2">
+
+
+        <div class="boxacquistifoto">
+
+          <a href="Zaino1.html"><img src="img/Zaino1.webp" id="fotoprincipale"></a>
+
+        </div>
+
+        <div class="boxacquistitesto">
+
+          <a href="Zaino1.html">
+            <h2>Zaino</h2>
+          </a>
+
+
+          <p>25,00 €</p>
+
+          <div class="boxacquisticolori">
+
+            <img src="img/Zaino1.webp">
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="boxacquisti2">
+
+
+        <div class="boxacquistifoto">
+
+          <a href=""><img src="img/Occhiali1.webp" id="fotoprincipale2"></a>
+
+        </div>
+
+        <div class="boxacquistitesto">
+
+          <a href="">
+            <h2>Occhiali</h2>
+          </a>
+
+
+          <p>25,00 €</p>
+
+          <div class="boxacquisticolori">
+
+            <img src="img/Occhiali1.webp">
+
+            <img src="img/Occhiali2.webp">
+
+            <img src="img/Occhiali3.webp">
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="boxacquisti2">
+
+        <div class="boxacquistifoto">
+
+          <a href=""><img src="img/Guanti.webp">
+
+          </a>
+        </div>
+
+        <div class="boxacquistitesto">
+
+          <a href="">
+            <h2>Guanti</h2>
+          </a>
+
+
+          <p>25,00 €</p>
+
+          <div class="boxacquisticolori">
+
+            <img src="img/Guanti.webp">
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="boxacquisti2">
+
+        <div class="boxacquistifoto">
+
+          <a href=""><img src="img/Guanti.webp">
+
+          </a>
+        </div>
+
+        <div class="boxacquistitesto">
+
+          <a href="">
+            <h2>Guanti</h2>
+          </a>
+
+
+          <p>25,00 €</p>
+
+          <div class="boxacquisticolori">
+
+            <img src="img/Guanti.webp">
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="boxacquisti2">
+
+        <div class="boxacquistifoto">
+
+          <a href=""><img src="img/Guanti.webp">
+
+          </a>
+        </div>
+
+        <div class="boxacquistitesto">
+
+          <a href="">
+            <h2>Guanti</h2>
+          </a>
+
+
+          <p>25,00 €</p>
+
+          <div class="boxacquisticolori">
+
+            <img src="img/Guanti.webp">
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="boxacquisti2">
+
+        <div class="boxacquistifoto">
+
+          <a href=""><img src="img/Guanti.webp">
+
+          </a>
+        </div>
+
+        <div class="boxacquistitesto">
+
+          <a href="">
+            <h2>Guanti</h2>
+          </a>
+
+
+          <p>25,00 €</p>
+
+          <div class="boxacquisticolori">
+
+            <img src="img/Guanti.webp">
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div id="Footer"></div>
+
+
+  <div class="overlay" id="overlay"></div>
+
+
+  <script src="Catalogo.js"></script>
+
+  <script src="Carrelo.js"></script>
+
+  <script src="Header.js"></script>
+
+  <script src="Prodotti.js"></script>
+
+  <script src="Footer.js"></script>
+
+</body>
+
+</html>
