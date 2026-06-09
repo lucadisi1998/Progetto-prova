@@ -7,6 +7,7 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="Header-Footer.css">
+  <link rel="stylesheet" href="Index.css">
 
   <style>
     @font-face {
@@ -28,500 +29,6 @@
     }
 
 
-
-
-    .sfondo1 {
-
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-    }
-
-    .boxsfondo1 {
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .sfondo1 img {
-
-      width: 100%;
-      height: 90vh;
-      object-fit: cover;
-    }
-
-
-
-    .sfondo1testo {
-
-      position: absolute;
-
-    }
-
-
-    .sfondo1 p {
-
-      color: white;
-      font-family: "scritta";
-      font-size: 60px;
-      margin: 0%;
-      text-shadow: 3px 3px 3px black;
-
-    }
-
-    .sfondo2 {
-
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-    }
-
-    .boxsfondo2 {
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    .sfondo2 img {
-
-      width: 100%;
-      height: 90vh;
-      object-fit: cover;
-    }
-
-
-
-    .sfondo2testo {
-
-      position: absolute;
-      margin-left: 5%;
-      margin-bottom: 5%;
-
-    }
-
-
-    .sfondo2 p {
-
-      color: white;
-      font-family: "scritta";
-      font-size: 60px;
-      margin: 0%;
-      text-shadow: 3px 3px 3px black;
-
-    }
-
-    .titolo {
-
-      padding-top: 3%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-
-    .titolo h2 {
-
-      font-size: 35px;
-      font-family: "FontPersonale";
-      color: rgb(21, 21, 21);
-      margin-left: 3%;
-
-    }
-
-    .titolo a {
-
-      font-size: 20px;
-      text-decoration: none;
-      font-family: "FontPersonale";
-      color: rgb(21, 21, 21);
-      margin-right: 3%;
-      position: relative;
-    }
-
-
-
-    .titolo a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 0%;
-      height: 1px;
-      background-color: #070707;
-      transition: width 0.3s ease;
-    }
-
-    .titolo a:hover::after {
-      width: 100%;
-    }
-
-
-
-
-    .boxfoto1 {
-
-      padding-bottom: 6%;
-      display: flex;
-      justify-content: space-evenly;
-
-    }
-
-    .boxfoto2 {
-      width: 30%;
-      border-radius: 5px;
-      display: flex;
-      overflow: hidden;
-
-
-    }
-
-    .boxfoto2 img {
-      width: 100%;
-      height: 70vh;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-
-    .boxfoto2:hover img {
-
-      transform: scale(1.1);
-
-    }
-
-
-
-
-    .boxfoto2 a {
-
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      align-items: center;
-      justify-content: flex-end;
-
-
-
-    }
-
-
-    .boxfotoTesto {
-      position: absolute;
-
-    }
-
-    .boxfotoTesto h2 {
-
-      font-size: 30px;
-      color: white;
-      text-shadow: 2px 2px 2px black;
-      font-family: "FontPersonale";
-
-
-
-    }
-
-
-
-    .boxacquisti {
-
-      display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 5%;
-    }
-
-    .boxacquisti2 {
-
-
-      width: 22%;
-
-    }
-
-    .boxacquistifoto {
-
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0px 0px 9px grey;
-      height: 50vh;
-      display: flex;
-
-
-    }
-
-    .boxacquistifoto a {
-
-      width: 100%;
-      display: flex;
-
-    }
-
-    .boxacquistifoto img {
-
-      width: 100%;
-      object-fit: contain;
-      mix-blend-mode: multiply;
-      transition: transform 0.3s ease;
-    }
-
-    .boxacquistifoto:hover img {
-
-      transform: scale(1.1);
-    }
-
-    .boxacquistitesto {
-
-      display: flex;
-      flex-direction: column;
-    }
-
-    .boxacquistitesto a {
-
-      text-decoration: none;
-    }
-
-
-    .boxacquistitesto h2 {
-
-      font-family: "FontPersonale";
-      color: rgb(21, 21, 21);
-      margin-bottom: 0%;
-    }
-
-
-
-    .boxacquistitesto p {
-
-      font-size: 20px;
-      font-family: "FontPersonale";
-      color: #6b6b6b;
-
-
-
-    }
-
-    .boxacquisticolori img {
-
-      width: 50px;
-      height: 50px;
-      border: solid 1px;
-      border-radius: 5px;
-      object-fit: contain;
-      cursor: pointer;
-    }
-
-    .sfondo3 {
-      display: flex;
-      height: 100vh;
-      justify-content: space-between;
-
-    }
-
-    .sfondo3foto {
-
-      width: 49%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-
-    }
-
-    .sfondo3foto img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-
-    }
-
-
-    .sfondo3foto a {
-
-      text-decoration: none;
-    }
-
-    .sfondo3fototesto {
-
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-    }
-
-    .sfondo3fototesto h2 {
-
-      color: white;
-      text-shadow: 1px 1px 1px black;
-      font-family: "FontPersonale";
-      font-size: 40px;
-
-    }
-
-    .sfondo3fototesto p {
-
-      color: white;
-      border: solid 3px white;
-      margin: 0;
-      text-transform: uppercase;
-      padding: 15px;
-      padding-left: 30px;
-      padding-right: 30px;
-      border-radius: 10px;
-      text-shadow: 1px 1px 1px black;
-      font-family: "FontPersonale";
-
-    }
-
-    .sfondo3fototesto p:hover {
-
-      transition: 0.5s ease;
-      background-color: #0d4883;
-    }
-
-    @media (max-width:900px) {
-
-
-
-      .sfondo1 img {
-
-        max-height: 80vh;
-      }
-
-      .sfondo1testo p {
-
-        font-size: 40px;
-      }
-
-      .titolo {
-
-        margin-top: 15%;
-        padding: 0;
-      }
-
-      .titolo h2 {
-        font-size: 20px;
-      }
-
-      .titolo a {
-
-        font-size: 18px;
-        text-decoration: underline;
-
-      }
-
-      .boxfoto1 {
-
-
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        gap: 15px;
-        padding-left: 5%;
-        padding-right: 5%;
-        scroll-snap-type: x mandatory;
-        margin-bottom: 5%;
-
-      }
-
-
-      .boxfoto2 {
-
-        min-width: 100%;
-        scroll-snap-align: center;
-        position: relative;
-        height: 80vh;
-
-      }
-
-      .boxfoto2 img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .boxfoto2:hover img {
-
-        transform: none;
-
-      }
-
-      .sfondo2 {
-
-        margin-bottom: 5%;
-      }
-
-      .boxsfondo2 {
-
-        justify-content: center;
-        align-items: center;
-      }
-
-      .sfondo2 img {
-
-        height: 80vh;
-
-      }
-
-
-
-      .boxacquisti {
-
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        padding-top: 15px;
-        margin-bottom: 15%;
-
-      }
-
-      .boxacquisti2 {
-
-        min-width: 90%;
-        padding-left: 5px;
-        padding-right: 5px;
-        scroll-snap-align: center;
-
-      }
-
-      .boxacquistifoto:hover img {
-
-        transform: none;
-      }
-
-      .sfondo3 {
-
-        flex-direction: column;
-        height: auto;
-      }
-
-      .sfondo3fototesto h2 {
-
-        font-size: 30px;
-      }
-
-      .sfondo3foto {
-
-        width: 100%;
-        margin-bottom: 5%;
-      }
-
-      .sfondo3foto p:active {
-        background-color: #0d4883;
-
-        transition: 0.0s ease;
-      }
-
-
-    }
   </style>
 
 </head>
@@ -557,17 +64,17 @@
   <div class="boxfoto1">
 
     <div class="boxfoto2">
-      <a href=""><img src="img/Sticbait2.jpg">
+      <a href="Esche.html"><img src="img/Sticbait2.jpg">
 
         <div class="boxfotoTesto">
-          <h2>Stickbait</h2>
+          <h2>Esche</h2>
 
         </div>
       </a>
     </div>
 
     <div class="boxfoto2">
-      <a href=""><img src="img/Cast further_ Explore more_.jpg">
+      <a href="Abbigliamento.html"><img src="img/Cast further_ Explore more_.jpg">
 
         <div class="boxfotoTesto">
           <h2>Abbigliamento</h2>
@@ -577,7 +84,7 @@
     </div>
 
     <div class="boxfoto2">
-      <a href=""><img src="img/Offshore tug-of-war_.jpg">
+      <a href="Accessori.html"><img src="img/Offshore tug-of-war_.jpg">
 
         <div class="boxfotoTesto">
           <h2>Accessori</h2>
@@ -618,19 +125,19 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/pelagus1.jpeg">
+        <a href="Pelagus1.html"><img src="img/pelagus1.jpeg">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Pelagus1.html">
           <h2>Pelagus 165</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>30,00 €</p>
 
         <div class="boxacquisticolori">
 
@@ -650,14 +157,14 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/stylo1.png">
+        <a href="Stylo1.html"><img src="img/stylo1.png">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Stylo1.html">
           <h2>Stylo</h2>
         </a>
 
@@ -684,19 +191,19 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/popper1.jpg">
+        <a href="Popper1.html"><img src="img/popper1.jpg">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Popper1.html">
           <h2>Popper</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>22,00 €</p>
 
         <div class="boxacquisticolori">
 
@@ -718,29 +225,29 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/minnow1.jpg">
+        <a href="Minnow1.html"><img src="img/minnow1.jpg">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Minnow1.html">
           <h2>Minnow</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>15,00 €</p>
 
         <div class="boxacquisticolori">
+
+          <img src="img/minnow1.jpg">
 
           <img src="img/minnow2.jpg">
 
           <img src="img/minnow3.jpg">
 
           <img src="img/minnow4.jpg">
-
-          <img src="img/minnow5.jpg">
 
         </div>
       </div>
@@ -794,19 +301,19 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Felpanera1.webp">
+        <a href="Felpa1.html"><img src="img/Felpanera1.webp">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Felpa1.html">
           <h2>Felpa</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>30,00 €</p>
 
         <div class="boxacquisticolori">
 
@@ -826,27 +333,27 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Giacca1.webp">
+        <a href="Giacca1.html"><img src="img/Giaccabianca1.webp">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Giacca1.html">
           <h2>Giacca </h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>70,00 €</p>
 
         <div class="boxacquisticolori">
 
-          <img src="img/Giacca1.webp">
+          <img src="img/Giaccabianca1.webp">
 
-          <img src="img/Giacca2.webp">
+          <img src="img/Giaccablu1.webp">
 
-          <img src="img/Giacca3.webp">
+    
 
 
 
@@ -860,27 +367,27 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Pantaloni1.webp">
+        <a href="Pantaloni1.html"><img src="img/Pantalonigrigi1.webp">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Pantaloni1.html">
           <h2>Pantaloni</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>50,00 €</p>
 
         <div class="boxacquisticolori">
 
-          <img src="img/Pantaloni1.webp">
+          <img src="img/Pantalonigrigi1.webp">
 
-          <img src="img/Pantaloni2.webp">
+          <img src="img/Pantaloniblu1.webp">
 
-          <img src="img/Pantaloni3.webp">
+          <img src="img/Pantalonineri1.webp">
 
 
 
@@ -894,19 +401,19 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Maglia1.jpg">
+        <a href="T-shirt1.html"><img src="img/Maglia1.jpg">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="T-shirt1.html">
           <h2>T-shirt</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>7,00 €</p>
 
         <div class="boxacquisticolori">
 
@@ -946,19 +453,19 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Zaino1.webp">
+        <a href="Zaino1.html"><img src="img/Zaino1.webp">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Zaino1.html">
           <h2>Zaino</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>20,00 €</p>
 
         <div class="boxacquisticolori">
 
@@ -974,27 +481,27 @@
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Occhiali1.webp">
+        <a href="Occhiali1.html"><img src="img/Occhialiblu1.webp">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
+        <a href="Occhiali1.html">
           <h2>Occhiali </h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>45,00 €</p>
 
         <div class="boxacquisticolori">
 
-          <img src="img/Occhiali1.webp">
+          <img src="img/Occhialiblu1.webp">
 
-          <img src="img/Occhiali2.webp">
+          <img src="img/Occhialigialli1.webp">
 
-          <img src="img/Occhiali3.webp">
+          <img src="img/Occhialiverdi1.webp">
 
 
 
@@ -1004,60 +511,61 @@
 
 
 
+
     <div class="boxacquisti2">
 
       <div class="boxacquistifoto">
 
-        <a href=""><img src="img/Guanti.webp">
+        <a href="Cappello1.html"><img src="img/Cappelloblu1.webp">
 
         </a>
       </div>
 
       <div class="boxacquistitesto">
 
-        <a href="">
-          <h2>Guanti</h2>
-        </a>
-
-
-        <p>25,00 €</p>
-
-        <div class="boxacquisticolori">
-
-          <img src="img/Guanti.webp">
-
-
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="boxacquisti2">
-
-      <div class="boxacquistifoto">
-
-        <a href=""><img src="img/Cappello1.webp">
-
-        </a>
-      </div>
-
-      <div class="boxacquistitesto">
-
-        <a href="">
+        <a href="Cappello1.html">
           <h2>Cappello</h2>
         </a>
 
 
-        <p>25,00 €</p>
+        <p>23,00 €</p>
 
         <div class="boxacquisticolori">
 
-          <img src="img/Cappello1.webp">
+          <img src="img/Cappelloblu1.webp">
 
-          <img src="img/Cappello2.webp">
+          <img src="img/Cappellobianco1.webp">
 
-          <img src="img/Cappello3.webp">
+         
+
+
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="boxacquisti2">
+
+      <div class="boxacquistifoto">
+
+        <a href="Guanti1.html"><img src="img/Guanti.webp">
+
+        </a>
+      </div>
+
+      <div class="boxacquistitesto">
+
+        <a href="Guanti1.html">
+          <h2>Guanti</h2>
+        </a>
+
+
+        <p>18,00 €</p>
+
+        <div class="boxacquisticolori">
+
+          <img src="img/Guanti.webp">
 
 
         </div>

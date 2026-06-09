@@ -15,6 +15,7 @@ body.noscroll {
   /* sopra tutti gli elementi */
   display: none;
   /* nascosto di default */
+  
 }
 
 .overlay.attivo {
@@ -521,6 +522,7 @@ hr {
   body.noscroll {
 
     padding: 0;
+    
   }
 
   .header {
@@ -567,7 +569,7 @@ hr {
     z-index: 999;
     border-top: solid 1px grey;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     border-bottom: solid 1px;
     left: 0;
     transform: translateX(-100%);
@@ -739,7 +741,7 @@ hr {
 
   .menucarrello2 {
 
-    height: 70vh;
+    height: 75vh;
     justify-content: space-between;
   }
 

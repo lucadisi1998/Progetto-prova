@@ -121,20 +121,26 @@ function renderCarrello() {
   const paginaCassa = window.location.pathname.includes("Cassa.html");
 
   html += `
+    <div class="finalecarrello">
+
     <div class="totale">
       <p>Totale</p>
       <p>€${totale.toFixed(2)}</p>
     </div>
     `;
   if (!paginaCassa) {
-    
-   html += ` <div class="pagamento">
+
+    html += ` <div class="pagamento">
       <a href="Cassa.html">
         <button>Acquista Ora</button>
       </a>
     </div>
   `;
   }
+
+  html += `
+    </div>
+  `;
 
   container.innerHTML = html;
 
@@ -154,13 +160,13 @@ function renderCarrello() {
 
 function rimuoviProdotto(id, taglia) {
 
-   if (taglia === "null" || taglia === "undefined" || taglia === "")
+  if (taglia === "null" || taglia === "undefined" || taglia === "")
     taglia = null;
 
   const indice = carrello.findIndex(item =>
 
     item.id === id &&
-   (item.taglia || null) === (taglia || null)
+    (item.taglia || null) === (taglia || null)
   );
 
   if (indice !== -1) {
@@ -176,14 +182,14 @@ function rimuoviProdotto(id, taglia) {
 
 function aumentaQuantita(id, taglia) {
 
-   if (taglia === "null" || taglia === "undefined" || taglia === "")
+  if (taglia === "null" || taglia === "undefined" || taglia === "")
     taglia = null;
 
 
   const item = carrello.find(p =>
 
     p.id === id &&
-   (p.taglia || null) === (taglia || null)
+    (p.taglia || null) === (taglia || null)
   );
 
   if (item) {
@@ -197,7 +203,7 @@ function aumentaQuantita(id, taglia) {
 
 function diminuisciQuantita(id, taglia) {
 
-   if (taglia === "null" || taglia === "undefined" || taglia === "")
+  if (taglia === "null" || taglia === "undefined" || taglia === "")
     taglia = null;
 
 
